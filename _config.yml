@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 弦上弦四的私密小博客
+subtitle: '这是我的心灵小书屋哦'
+description: '这是我的心灵小书屋哦^-^'
 keywords:
-author: John Doe
+author: Loaden Hang
 language: zh-CN
 timezone: ''
 
@@ -28,7 +28,8 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: 
+
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -40,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -61,8 +62,8 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
-  order_by: -date
+  per_page: 1
+  order_by: -sticky -date
 
 # Category & Tag
 default_category: uncategorized
@@ -105,3 +106,8 @@ deploy:
   repo: git@github.com:luduihang/luduihang.github.io.git
   branch: main  # 必须和 GitHub Pages 设置的分支一致
   
+search:
+path: search.xml
+field: post
+format: html
+limit: 10000
